@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+int num;
+printf("escolha um número de 1 a 3: ");
+scanf("%d", &num);
+
+if (num == 1){
+printf("o filme escolhido foi: Os pinguins do papai (duração de 1h34min"));
+}
+else if (num == 2){
+printf("o filme escolhido foi: Batman, the Dark Knight (2h32min)");
+}
+else if (num == 3){
+printf("o filme escolhido foi: A freira (1h36min)");
+}
+else{ 
+printf("número incorreto. tente novamente!");
+}
+return 0
+}
+
