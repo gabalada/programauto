@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int comp(const void *a, const void *b) {
+const char **strA = (const char **)a; 
+const char **strB =  (const char **)b;
+return strcmp(*strA, *strB);
+}
+
+int main(void) {
+char a[70], b[70], c[70]; 
+char *ord[3];
+int i;
+
+printf("Digite o primeiro nome: ");
+scanf ("%s", a);
+
+printf("Digite o segundo nome: ");
+scanf ("%s", b);
+
+printf("Digite o terceiro nome: ");
+scanf ("%s", c);
+
+ord[0] = a;
+ord[1] = b;
+ord[2] = c;
+
+qsort(ord, 3, sizeof(char *), comp);
+
+printf("Em ordem alfabética, os nomes são: ");
+for (i=0; i<3; i++) {
+printf("%s\n", ord[i]);
+}
+
+return 0
+
+}
