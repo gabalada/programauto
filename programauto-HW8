@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void receive_data (int age, float height){
+printf("Dados: \n");
+printf("Idade: %d \n", age);
+printf("Altura: %.2f centímetros ", height);
+}
+void print_data (int age, float height){
+printf("Dados: \n");
+printf("Idade: %d \n", age);
+printf("Altura: %.2f centímetros \n", height);
+}
+int main() {
+
+int id;
+float alt;
+
+printf("Digite sua idade: ");
+scanf("%d", &id);
+
+printf("Digite sua altura: ");
+scanf("%f", &alt);
+
+receive_data(id, alt);
+
+print_data(id, alt);
+
+return 0;
+
+}
