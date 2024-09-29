@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void){ 
+
+srand(time(NULL));
+
+int i, j;
+char nomes[10][60];
+printf("Digite os 10 nomes: \n");
+ for (i=0; i<10; i++) {
+ printf("Nome: %d", i+1); 
+ scanf("%59s", nomes[i]);
+}
+ int index1 = rand() % 10;
+ int index2;
+ do {
+  index2 = rand() % 10;
+  } while (index1 == index2);
+
+printf("%s gosta de %s \n", nomes[index1], nomes[index2]);
+
+return 0;
+
+}
+ 
