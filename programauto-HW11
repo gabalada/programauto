@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h> 
+#include <time.h> 
+
+int main(void) {
+
+string p1;
+int tcte[3][3];
+int i, j;
+
+srand(time(NULL));
+  
+  printf("Welcome to Gaba's tic tac toe\n");
+  printf("Please choose: O or X\n");
+  scanf("&s", p1);
+
+  if (p1 = O)
+    printf("You are O\n");
+  else
+    printf("You are X\n");
+  return 0;
+
+  printf("Let's start the game\n");
+  printf("You are going to play against the computer\n");
+
+  printf("Please, choose a number between 1 and 9\n");
+for (i=0; i<3; i++)
+    for (j=0; j<3; j++)
+        scanf(tcte[i][j]);
+}
